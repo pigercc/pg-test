@@ -1,0 +1,29 @@
+spring:
+#  datasource:
+#    password: dev_mysql!@
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://hk-cdb-1pm06yh1.sql.tencentcdb.com:63975/pg_test?characterEncoding=utf8&useSSL=false
+#    hikari:
+#      connection-timeout: 60000
+#      maximum-pool-size: 10
+#      minimum-idle: 10
+#    username: root
+  shardingsphere:
+    datasource:
+      ds0:
+        type: com.zaxxer.hikari.HikariDataSource
+        password: dev_mysql!@
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://hk-cdb-1pm06yh1.sql.tencentcdb.com:63975/pg_test?characterEncoding=utf8&useSSL=false
+        connection-timeout: 60000
+        maximum-pool-size: 10
+        minimum-idle: 10
+        username: root
+    sharding:
+      tables:
+        user:
+          actualDataNodes: ds0.user_${0..9}
+          tableStrategy:
+            inline:
+              shardingColumn: id
+              algorithmExpression: user_${id % 10}

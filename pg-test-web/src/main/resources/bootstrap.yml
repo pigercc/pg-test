@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: pg-test-web #定义你的项目的名称,zk会在你指定的根目录下寻找以这个项目名命名的目录下的配置
+  cloud:
+    consul:
+      host: 8.210.5.17 # consul地址
+      port: 8500 # consul端口
+      config:
+        profile-separator: / # 使用/作为配置文件分割符
+        format: yaml # 使用yaml格式
+      discovery:
+        tags: group=future,version=1.0,region=future
+        register-health-check: false
+        instance-id: pg-test-web
+  profiles:
+    active: local # 指定consul作用的环境配置
+
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        boot:
+#          autoconfigure: debug

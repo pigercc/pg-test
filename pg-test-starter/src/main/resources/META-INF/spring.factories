@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.abc.pgtest.S2AbcAutoConfiguration,\
+  com.bcd.pgtest.S2BcdAutoConfiguration

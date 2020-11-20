@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.liying.pg-test</groupId>
+    <artifactId>pg-test</artifactId>
+    <packaging>pom</packaging>
+    <version>3.0.0-SNAPSHOT</version>
+
+    <parent>
+        <groupId>com.jq.framework</groupId>
+        <artifactId>framework-parent</artifactId>
+        <version>3.0.0-SNAPSHOT</version>
+    </parent>
+    <modules>
+        <module>pg-test-shard</module>
+        <module>pg-test-core</module>
+        <module>pg-test-starter</module>
+        <module>pg-test-web</module>
+        <module>pg-test-spring-session</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
+</project>
