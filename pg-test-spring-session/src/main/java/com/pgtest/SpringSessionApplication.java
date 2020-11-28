@@ -37,8 +37,10 @@ public class SpringSessionApplication {
     public String login(){
         return "login";
     }
-
-
+    @GetMapping("query")
+    public String query(){
+        return "query";
+    }
 
     @PostMapping("testTimeLimit")
     public String testTimeLimit(@RequestBody TimeQuery timeQuery)

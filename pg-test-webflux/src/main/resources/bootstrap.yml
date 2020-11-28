@@ -1,0 +1,20 @@
+server:
+  port: 4041
+spring:
+  application:
+    name: pg-test-webflux
+  redis:
+    password: 52leifeng@
+    database: 4
+    testOnBorrow: true
+    port: 6379
+    lettuce:
+      max-idle: 200
+      max-active: 1024
+      max-wait: 1000
+    host: devredis.6868hy.com
+    timeout: 186400
+  session:
+    store-type: redis
+    #优先用这里，没有才会使用server.servlet.session.timeout
+    timeout: 36000s

@@ -1,7 +1,7 @@
 package com.abc.pgtest.shard.dao;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.liying.pgtest.core.BaseSpringTest;
+import com.liying.BaseSpringTest;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

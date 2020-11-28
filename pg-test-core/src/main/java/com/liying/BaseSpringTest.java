@@ -1,4 +1,4 @@
-package com.abc.pgtest.core;
+package com.liying;
 
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;

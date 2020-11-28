@@ -1,7 +1,7 @@
 package com.abc.pgtest.shard.service;
 
 import com.abc.pgtest.shard.entity.UserEntity;
-import com.liying.pgtest.core.BaseSpringTest;
+import com.liying.BaseSpringTest;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

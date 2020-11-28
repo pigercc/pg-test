@@ -20,6 +20,7 @@
         <module>pg-test-starter</module>
         <module>pg-test-web</module>
         <module>pg-test-spring-session</module>
+        <module>pg-test-webflux</module>
     </modules>
 
     <dependencies>
